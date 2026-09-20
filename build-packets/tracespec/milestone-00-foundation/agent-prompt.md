@@ -1,0 +1,1 @@
+Read `context.md`, `tasks.md`, `acceptance-tests.md`, and `prompts/tracespec/04-engineering/milestone-00-foundation.md` before working. Implement only M0. Explain plan before code; add tests; report changed files and unresolved assumptions.
