@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons — TraceSpec</title>
+  <link rel="stylesheet" href="../design-tokens.css">
+  <style>
+    body {
+      font-family: var(--font-sans);
+      padding: var(--space-8);
+      background-color: var(--bg-primary);
+    }
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-6);
+    }
+    .example-group {
+      margin-bottom: var(--space-8);
+    }
+    .button-row {
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .label {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-right: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Buttons</h1>
+
+  <div class="example-group">
+    <div class="button-row">
+      <span class="label">Primary actions:</span>
+      <button class="btn btn-primary">New Project</button>
+      <button class="btn btn-primary">Generate Build Packet</button>
+      <button class="btn btn-primary">Approve Revision</button>
+    </div>
+  </div>
+
+  <div class="example-group">
+    <div class="button-row">
+      <span class="label">Secondary actions:</span>
+      <button class="btn btn-secondary">Copy Prompt</button>
+      <button class="btn btn-secondary">Export</button>
+      <button class="btn btn-secondary">Cancel</button>
+    </div>
+  </div>
+
+  <div class="example-group">
+    <div class="button-row">
+      <span class="label">Danger actions:</span>
+      <button class="btn btn-danger">Reject</button>
+      <button class="btn btn-danger">Delete Project</button>
+    </div>
+  </div>
+</body>
+</html>
