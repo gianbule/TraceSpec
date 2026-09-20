@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Block — TraceSpec</title>
+  <link rel="stylesheet" href="../design-tokens.css">
+  <style>
+    body {
+      font-family: var(--font-sans);
+      padding: var(--space-8);
+      background-color: var(--bg-primary);
+    }
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-6);
+    }
+    .example-group {
+      margin-bottom: var(--space-8);
+    }
+    .code-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-2);
+    }
+    .code-title {
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      color: var(--text-secondary);
+    }
+    .btn-copy {
+      font-size: var(--text-xs);
+      padding: var(--space-1) var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Code Block</h1>
+
+  <div class="example-group">
+    <div class="code-header">
+      <span class="code-title">agent-prompt.md</span>
+      <button class="btn btn-secondary btn-copy">Copy</button>
+    </div>
+    <div class="code-block">
+      <pre><code>Read `context.md`, `tasks.md`, `acceptance-tests.md`, and
+`prompts/tracespec/04-engineering/milestone-00-foundation.md`
+before working. Implement only M0. Explain plan before code;
+add tests; report changed files and unresolved assumptions.</code></pre>
+    </div>
+  </div>
+</body>
+</html>
