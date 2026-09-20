@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Badges — TraceSpec</title>
+  <link rel="stylesheet" href="../design-tokens.css">
+  <style>
+    body {
+      font-family: var(--font-sans);
+      padding: var(--space-8);
+      background-color: var(--bg-primary);
+    }
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-6);
+    }
+    .example-group {
+      margin-bottom: var(--space-8);
+    }
+    .badge-row {
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .label {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-right: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Status Badges</h1>
+
+  <div class="example-group">
+    <div class="badge-row">
+      <span class="label">Project status:</span>
+      <span class="status-badge draft">Draft</span>
+      <span class="status-badge ready">Ready</span>
+      <span class="status-badge approved">Approved</span>
+      <span class="status-badge blocked">Blocked</span>
+      <span class="status-badge warning">Warning</span>
+    </div>
+  </div>
+
+  <div class="example-group">
+    <div class="badge-row">
+      <span class="label">Traceability:</span>
+      <span class="trace-chip problem">P-01</span>
+      <span class="trace-chip requirement">FR-01</span>
+      <span class="trace-chip flow">FLOW-01</span>
+      <span class="trace-chip screen">SCR-01</span>
+      <span class="trace-chip task">TASK-01</span>
+      <span class="trace-chip test">TEST-01</span>
+    </div>
+  </div>
+
+  <div class="example-group">
+    <div class="badge-row">
+      <span class="label">Trace gap:</span>
+      <div class="trace-gap">
+        ⚠️ [TRACE GAP] FR-03 belum memiliki test.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
